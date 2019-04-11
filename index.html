@@ -152,6 +152,174 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-JS知识-变量的类型和计算" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/09/JS知识-变量的类型和计算/">JS知识-变量的类型和计算</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/09/JS知识-变量的类型和计算/" class="archive-article-date">
+  	<time datetime="2019-04-09T10:21:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a>知识点：</h1><p><strong>1. 变量类型</strong></p>
+<ul>
+<li><p>值类型vs引用类型</p>
+<pre><code>//值类型
+var a = 100;
+var b = a;
+a = 200;
+console.log(b); //100
+//引用类型（其中对象，数组，函数都是引用类型）
+var a = {age:20};
+var b = a;
+b.age = 21
+console.log(a.age); //21
+</code></pre></li>
+</ul>
+<ul>
+<li><p>typeof运算符详解(typeof 只能区分值类型的详细类型，区分不出引用类型，除函数外）</p>
+<pre><code>typeof undefined //undefined
+typeof &apos;abc&apos; // String
+typeof 123 //number
+typeof true //boolean
+typeof {} //object
+typeof [] //object
+typeof null //object
+typeof console.log //function
+</code></pre></li>
+</ul>
+<p><strong>2. 变量计算</strong></p>
+<ul>
+<li><p>强制类型转换</p>
+<pre><code>//字符串拼接        
+var a = 100+10; //110
+var b = 100+&apos;10&apos;; //&apos;10010&apos;
+//==运算符
+100 == &apos;100&apos; //true
+0 == &apos;&apos; //true
+null == undefined //true
+//if语句
+var a = true;
+if(a){
+    //....
+}
+var b = 100;
+if(b){
+    //....
+}
+var c = &apos;&apos;;
+if(c){
+    //....
+}
+//逻辑运算符
+console.log(10 &amp;&amp; 0); //0
+console.log(&apos;&apos; || &apos;abc&apos;); //abc
+console.log(!window.abc); //true
+//判断一个变量是否会被当做true还是false
+var a =100;
+console.log(!!a);
+</code></pre></li>
+</ul>
+<h1 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h1><ol>
+<li><p><strong>JS实验typeof能得到的哪些类型？</strong></p>
+<pre><code>typeof undefined //undefined
+typeof &apos;abc&apos; // String
+typeof 123 //number
+typeof true //boolean
+typeof {} //object
+typeof [] //object
+typeof null //object
+typeof console.log //function
+</code></pre></li>
+<li><p>何时使用 === 何时使用 ==</p>
+<pre><code>if(obj.a == null){
+    //这里相当于 obj.a === null || obj.a === undefined ，简写形式
+    //这是jQuery源码中的推荐写法
+}
+</code></pre></li>
+<li>JS中有哪些内置函数 —— 数据封装类型<ul>
+<li>object</li>
+<li>Array</li>
+<li>String</li>
+<li>Number</li>
+<li>Boolean</li>
+<li>Date</li>
+<li>Function</li>
+<li>Error</li>
+<li>RegExp</li>
+</ul>
+</li>
+<li><p>JS按存储方式分为哪些类型，并描述其特点</p>
+<pre><code>//值类型
+var a = 100;
+var b = a;
+a = 200;
+console.log(b); //100
+//引用类型（其中对象，数组，函数都是引用类型）
+var a = {age:20};
+var b = a;
+b.age = 21
+console.log(a.age); //21
+</code></pre></li>
+<li><p>如何理解JSON</p>
+<p> <strong>JS只不过是一个JS对象而已</strong></p>
+<pre><code>JSON.stringify({a:10,b:20});
+JSON.parse(&apos;{&quot;a&quot;:&quot;10&quot;,&quot;b&quot;:&quot;20&quot;}&apos;);
+</code></pre></li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/09/JS知识-变量的类型和计算/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-云计算第一次作业" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
