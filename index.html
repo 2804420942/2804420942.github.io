@@ -152,6 +152,185 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-final-topic-code" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/24/final-topic-code/">final-topic-code</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/24/final-topic-code/" class="archive-article-date">
+  	<time datetime="2019-05-23T23:21:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##碱基配对##</p>
+<pre><code>#include &lt;stdio.h&gt;
+    /* run this program using the console pauser or add your own getch, system(&quot;pause&quot;) or input loop */
+#define NULL 0
+int main(int argc, char** argv) {
+FILE *fp,*fp1;
+int i;
+char c,d;
+if((fp=fopen(&quot;F://学习相关笔记//大三//大三下//云计算//理论课//jjd.txt&quot;,&quot;w&quot;))==NULL){//输入的碱基放在jjd.txt文件里 
+    printf(&quot;file can not open&quot;);
+    //exit(0);
+}
+if((fp1=fopen(&quot;F://学习相关笔记//大三//大三下//云计算//理论课//jjd1.txt&quot;,&quot;w&quot;))==NULL){//与输入相匹配的碱基放在jjd1.txt文件里 
+    printf(&quot;file can not open&quot;);
+//    exit(0);
+}
+while(c=getchar()){
+    fputc(c,fp);
+    if(c==&apos;A&apos;){//判断符合哪种条件在进行配对，A与T配，C与G配 
+        d=&apos;T&apos;;
+        fputc(d,fp1);
+    }
+    else if(c==&apos;T&apos;){
+        d=&apos;A&apos;;
+        fputc(d,fp1);
+    }
+    else if(c==&apos;C&apos;){
+        d=&apos;G&apos;;
+        fputc(d,fp1);
+    }
+    else if(c==&apos;G&apos;){
+        d=&apos;C&apos;;
+        fputc(d,fp1);
+    }
+    else if(c==&apos;0&apos;){
+        break;
+    }
+}
+fclose(fp);
+fclose(fp1);
+fp=NULL;
+fp1=NULL;
+return 0;
+}
+</code></pre><p>##双螺旋结构##</p>
+<pre><code>#include &lt;stdio.h&gt;
+/* run this program using the console pauser or add your own getch, system(&quot;pause&quot;) or input loop */
+
+void shu(char c){
+if(c==&apos;A&apos;){
+    printf(&quot;T&quot;);
+}
+else if(c==&apos;T&apos;){
+    printf(&quot;A&quot;);
+}
+else if(c==&apos;C&apos;){
+    printf(&quot;G&quot;);
+}
+else if(c==&apos;G&apos;){
+    printf(&quot;C&quot;);
+}
+}
+int main(int argc, char** argv) {
+//打印空格，用空格控制间距,使的它成为螺旋状 
+int m=1;
+char c;
+while(c=getchar()) {
+    if(m==1||m%8==0){
+        putchar(c);
+        printf(&quot;      &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==2){
+        printf(&quot; &quot;);
+        putchar(c);
+        printf(&quot;    &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==3){
+        printf(&quot;  &quot;);
+        putchar(c);
+        printf(&quot;  &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==4){
+        printf(&quot;   &quot;);
+        putchar(c);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==5){
+        printf(&quot;   &quot;);
+        putchar(c);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==6){
+        printf(&quot;  &quot;);
+        putchar(c);
+        printf(&quot;  &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==7){
+        printf(&quot; &quot;);
+        putchar(c);
+        printf(&quot;    &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    m++;
+}
+return 0;
+}
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/24/final-topic-code/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-JS知识-变量的类型和计算" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

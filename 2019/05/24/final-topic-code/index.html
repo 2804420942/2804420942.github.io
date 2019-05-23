@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>JS知识-变量的类型和计算 | KillerZE</title>
+  <title>final-topic-code | KillerZE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="知识点：1. 变量类型  值类型vs引用类型 //值类型 var a = 100; var b = a; a = 200; console.log(b); //100 //引用类型（其中对象，数组，函数都是引用类型） var a = {age:20}; var b = a; b.age = 21 console.log(a.age); //21    typeof运算符详解(typeof 只能区分">
+  <meta name="description" content="##碱基配对## #include &amp;lt;stdio.h&amp;gt;     /* run this program using the console pauser or add your own getch, system(&amp;quot;pause&amp;quot;) or input loop */ #define NULL 0 int main(int argc, char** argv) { FI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS知识-变量的类型和计算">
-<meta property="og:url" content="http://yoursite.com/2019/04/09/JS知识-变量的类型和计算/index.html">
+<meta property="og:title" content="final-topic-code">
+<meta property="og:url" content="http://yoursite.com/2019/05/24/final-topic-code/index.html">
 <meta property="og:site_name" content="KillerZE">
-<meta property="og:description" content="知识点：1. 变量类型  值类型vs引用类型 //值类型 var a = 100; var b = a; a = 200; console.log(b); //100 //引用类型（其中对象，数组，函数都是引用类型） var a = {age:20}; var b = a; b.age = 21 console.log(a.age); //21    typeof运算符详解(typeof 只能区分">
+<meta property="og:description" content="##碱基配对## #include &amp;lt;stdio.h&amp;gt;     /* run this program using the console pauser or add your own getch, system(&amp;quot;pause&amp;quot;) or input loop */ #define NULL 0 int main(int argc, char** argv) { FI">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-11T11:07:50.000Z">
+<meta property="og:updated_time" content="2019-05-23T23:53:24.633Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS知识-变量的类型和计算">
-<meta name="twitter:description" content="知识点：1. 变量类型  值类型vs引用类型 //值类型 var a = 100; var b = a; a = 200; console.log(b); //100 //引用类型（其中对象，数组，函数都是引用类型） var a = {age:20}; var b = a; b.age = 21 console.log(a.age); //21    typeof运算符详解(typeof 只能区分">
+<meta name="twitter:title" content="final-topic-code">
+<meta name="twitter:description" content="##碱基配对## #include &amp;lt;stdio.h&amp;gt;     /* run this program using the console pauser or add your own getch, system(&amp;quot;pause&amp;quot;) or input loop */ #define NULL 0 int main(int argc, char** argv) { FI">
   
     <link rel="alternative" href="/atom.xml" title="KillerZE" type="application/atom+xml">
   
@@ -154,133 +154,144 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JS知识-变量的类型和计算" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-final-topic-code" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      JS知识-变量的类型和计算
+      final-topic-code
     </h1>
   
 
         
-        <a href="/2019/04/09/JS知识-变量的类型和计算/" class="archive-article-date">
-  	<time datetime="2019-04-09T10:21:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-09</time>
+        <a href="/2019/05/24/final-topic-code/" class="archive-article-date">
+  	<time datetime="2019-05-23T23:21:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a>知识点：</h1><p><strong>1. 变量类型</strong></p>
-<ul>
-<li><p>值类型vs引用类型</p>
-<pre><code>//值类型
-var a = 100;
-var b = a;
-a = 200;
-console.log(b); //100
-//引用类型（其中对象，数组，函数都是引用类型）
-var a = {age:20};
-var b = a;
-b.age = 21
-console.log(a.age); //21
-</code></pre></li>
-</ul>
-<ul>
-<li><p>typeof运算符详解(typeof 只能区分值类型的详细类型，区分不出引用类型，除函数外）</p>
-<pre><code>typeof undefined //undefined
-typeof &apos;abc&apos; // String
-typeof 123 //number
-typeof true //boolean
-typeof {} //object
-typeof [] //object
-typeof null //object
-typeof console.log //function
-</code></pre></li>
-</ul>
-<p><strong>2. 变量计算</strong></p>
-<ul>
-<li><p>强制类型转换</p>
-<pre><code>//字符串拼接        
-var a = 100+10; //110
-var b = 100+&apos;10&apos;; //&apos;10010&apos;
-//==运算符
-100 == &apos;100&apos; //true
-0 == &apos;&apos; //true
-null == undefined //true
-//if语句
-var a = true;
-if(a){
-    //....
+        <p>##碱基配对##</p>
+<pre><code>#include &lt;stdio.h&gt;
+    /* run this program using the console pauser or add your own getch, system(&quot;pause&quot;) or input loop */
+#define NULL 0
+int main(int argc, char** argv) {
+FILE *fp,*fp1;
+int i;
+char c,d;
+if((fp=fopen(&quot;F://学习相关笔记//大三//大三下//云计算//理论课//jjd.txt&quot;,&quot;w&quot;))==NULL){//输入的碱基放在jjd.txt文件里 
+    printf(&quot;file can not open&quot;);
+    //exit(0);
 }
-var b = 100;
-if(b){
-    //....
+if((fp1=fopen(&quot;F://学习相关笔记//大三//大三下//云计算//理论课//jjd1.txt&quot;,&quot;w&quot;))==NULL){//与输入相匹配的碱基放在jjd1.txt文件里 
+    printf(&quot;file can not open&quot;);
+//    exit(0);
 }
-var c = &apos;&apos;;
-if(c){
-    //....
+while(c=getchar()){
+    fputc(c,fp);
+    if(c==&apos;A&apos;){//判断符合哪种条件在进行配对，A与T配，C与G配 
+        d=&apos;T&apos;;
+        fputc(d,fp1);
+    }
+    else if(c==&apos;T&apos;){
+        d=&apos;A&apos;;
+        fputc(d,fp1);
+    }
+    else if(c==&apos;C&apos;){
+        d=&apos;G&apos;;
+        fputc(d,fp1);
+    }
+    else if(c==&apos;G&apos;){
+        d=&apos;C&apos;;
+        fputc(d,fp1);
+    }
+    else if(c==&apos;0&apos;){
+        break;
+    }
 }
-//逻辑运算符
-console.log(10 &amp;&amp; 0); //0
-console.log(&apos;&apos; || &apos;abc&apos;); //abc
-console.log(!window.abc); //true
-//判断一个变量是否会被当做true还是false
-var a =100;
-console.log(!!a);
-</code></pre></li>
-</ul>
-<h1 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h1><ol>
-<li><p><strong>JS实验typeof能得到的哪些类型？</strong></p>
-<pre><code>typeof undefined //undefined
-typeof &apos;abc&apos; // String
-typeof 123 //number
-typeof true //boolean
-typeof {} //object
-typeof [] //object
-typeof null //object
-typeof console.log //function
-</code></pre></li>
-<li><p>何时使用 === 何时使用 ==</p>
-<pre><code>if(obj.a == null){
-    //这里相当于 obj.a === null || obj.a === undefined ，简写形式
-    //这是jQuery源码中的推荐写法
+fclose(fp);
+fclose(fp1);
+fp=NULL;
+fp1=NULL;
+return 0;
 }
-</code></pre></li>
-<li>JS中有哪些内置函数 —— 数据封装类型<ul>
-<li>object</li>
-<li>Array</li>
-<li>String</li>
-<li>Number</li>
-<li>Boolean</li>
-<li>Date</li>
-<li>Function</li>
-<li>Error</li>
-<li>RegExp</li>
-</ul>
-</li>
-<li><p>JS按存储方式分为哪些类型，并描述其特点</p>
-<pre><code>//值类型
-var a = 100;
-var b = a;
-a = 200;
-console.log(b); //100
-//引用类型（其中对象，数组，函数都是引用类型）
-var a = {age:20};
-var b = a;
-b.age = 21
-console.log(a.age); //21
-</code></pre></li>
-<li><p>如何理解JSON</p>
-<p> <strong>JS只不过是一个JS对象而已</strong></p>
-<pre><code>JSON.stringify({a:10,b:20});
-JSON.parse(&apos;{&quot;a&quot;:&quot;10&quot;,&quot;b&quot;:&quot;20&quot;}&apos;);
-</code></pre></li>
-</ol>
+</code></pre><p>##双螺旋结构##</p>
+<pre><code>#include &lt;stdio.h&gt;
+/* run this program using the console pauser or add your own getch, system(&quot;pause&quot;) or input loop */
 
+void shu(char c){
+if(c==&apos;A&apos;){
+    printf(&quot;T&quot;);
+}
+else if(c==&apos;T&apos;){
+    printf(&quot;A&quot;);
+}
+else if(c==&apos;C&apos;){
+    printf(&quot;G&quot;);
+}
+else if(c==&apos;G&apos;){
+    printf(&quot;C&quot;);
+}
+}
+int main(int argc, char** argv) {
+//打印空格，用空格控制间距,使的它成为螺旋状 
+int m=1;
+char c;
+while(c=getchar()) {
+    if(m==1||m%8==0){
+        putchar(c);
+        printf(&quot;      &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==2){
+        printf(&quot; &quot;);
+        putchar(c);
+        printf(&quot;    &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==3){
+        printf(&quot;  &quot;);
+        putchar(c);
+        printf(&quot;  &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==4){
+        printf(&quot;   &quot;);
+        putchar(c);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==5){
+        printf(&quot;   &quot;);
+        putchar(c);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==6){
+        printf(&quot;  &quot;);
+        putchar(c);
+        printf(&quot;  &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    else if(m%8==7){
+        printf(&quot; &quot;);
+        putchar(c);
+        printf(&quot;    &quot;);
+        shu(c);
+        printf(&quot;\n&quot;);
+    }
+    m++;
+}
+return 0;
+}
+</code></pre>
       
 
       
@@ -364,7 +375,7 @@ JSON.parse(&apos;{&quot;a&quot;:&quot;10&quot;,&quot;b&quot;:&quot;20&quot;}&apo
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/09/JS知识-变量的类型和计算/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/24/final-topic-code/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -378,18 +389,9 @@ JSON.parse(&apos;{&quot;a&quot;:&quot;10&quot;,&quot;b&quot;:&quot;20&quot;}&apo
   
 <nav id="article-nav">
   
-    <a href="/2019/05/24/final-topic-code/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          final-topic-code
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/03/17/云计算第一次作业/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">云计算</div>
+    <a href="/2019/04/09/JS知识-变量的类型和计算/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS知识-变量的类型和计算</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -417,7 +419,7 @@ JSON.parse(&apos;{&quot;a&quot;:&quot;10&quot;,&quot;b&quot;:&quot;20&quot;}&apo
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="JS知识-变量的类型和计算" data-title="JS知识-变量的类型和计算" data-url="http://yoursite.com/2019/04/09/JS知识-变量的类型和计算/"></div>
+	<div class="ds-thread" data-thread-key="final-topic-code" data-title="final-topic-code" data-url="http://yoursite.com/2019/05/24/final-topic-code/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -440,8 +442,8 @@ JSON.parse(&apos;{&quot;a&quot;:&quot;10&quot;,&quot;b&quot;:&quot;20&quot;}&apo
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2019/04/09/JS知识-变量的类型和计算/", 
-    sourceId: "JS知识-变量的类型和计算",
+    url: "http://yoursite.com/2019/05/24/final-topic-code/", 
+    sourceId: "final-topic-code",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };

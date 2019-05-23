@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>JS知识-变量的类型和计算 | KillerZE</title>
+  <title>Archives: 2019/5 | KillerZE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="知识点：1. 变量类型  值类型vs引用类型 //值类型 var a = 100; var b = a; a = 200; console.log(b); //100 //引用类型（其中对象，数组，函数都是引用类型） var a = {age:20}; var b = a; b.age = 21 console.log(a.age); //21    typeof运算符详解(typeof 只能区分">
-<meta property="og:type" content="article">
-<meta property="og:title" content="JS知识-变量的类型和计算">
-<meta property="og:url" content="http://yoursite.com/2019/04/09/JS知识-变量的类型和计算/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="KillerZE">
+<meta property="og:url" content="http://yoursite.com/archives/2019/05/index.html">
 <meta property="og:site_name" content="KillerZE">
-<meta property="og:description" content="知识点：1. 变量类型  值类型vs引用类型 //值类型 var a = 100; var b = a; a = 200; console.log(b); //100 //引用类型（其中对象，数组，函数都是引用类型） var a = {age:20}; var b = a; b.age = 21 console.log(a.age); //21    typeof运算符详解(typeof 只能区分">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-11T11:07:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS知识-变量的类型和计算">
-<meta name="twitter:description" content="知识点：1. 变量类型  值类型vs引用类型 //值类型 var a = 100; var b = a; a = 200; console.log(b); //100 //引用类型（其中对象，数组，函数都是引用类型） var a = {age:20}; var b = a; b.age = 21 console.log(a.age); //21    typeof运算符详解(typeof 只能区分">
+<meta name="twitter:title" content="KillerZE">
   
     <link rel="alternative" href="/atom.xml" title="KillerZE" type="application/atom+xml">
   
@@ -154,306 +150,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JS知识-变量的类型和计算" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      JS知识-变量的类型和计算
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/05/24/final-topic-code/" class="archive-article-date">
+  	<time datetime="2019-05-23T23:21:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-24</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/05/24/final-topic-code/">final-topic-code</a>
     </h1>
   
 
-        
-        <a href="/2019/04/09/JS知识-变量的类型和计算/" class="archive-article-date">
-  	<time datetime="2019-04-09T10:21:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="知识点："><a href="#知识点：" class="headerlink" title="知识点："></a>知识点：</h1><p><strong>1. 变量类型</strong></p>
-<ul>
-<li><p>值类型vs引用类型</p>
-<pre><code>//值类型
-var a = 100;
-var b = a;
-a = 200;
-console.log(b); //100
-//引用类型（其中对象，数组，函数都是引用类型）
-var a = {age:20};
-var b = a;
-b.age = 21
-console.log(a.age); //21
-</code></pre></li>
-</ul>
-<ul>
-<li><p>typeof运算符详解(typeof 只能区分值类型的详细类型，区分不出引用类型，除函数外）</p>
-<pre><code>typeof undefined //undefined
-typeof &apos;abc&apos; // String
-typeof 123 //number
-typeof true //boolean
-typeof {} //object
-typeof [] //object
-typeof null //object
-typeof console.log //function
-</code></pre></li>
-</ul>
-<p><strong>2. 变量计算</strong></p>
-<ul>
-<li><p>强制类型转换</p>
-<pre><code>//字符串拼接        
-var a = 100+10; //110
-var b = 100+&apos;10&apos;; //&apos;10010&apos;
-//==运算符
-100 == &apos;100&apos; //true
-0 == &apos;&apos; //true
-null == undefined //true
-//if语句
-var a = true;
-if(a){
-    //....
-}
-var b = 100;
-if(b){
-    //....
-}
-var c = &apos;&apos;;
-if(c){
-    //....
-}
-//逻辑运算符
-console.log(10 &amp;&amp; 0); //0
-console.log(&apos;&apos; || &apos;abc&apos;); //abc
-console.log(!window.abc); //true
-//判断一个变量是否会被当做true还是false
-var a =100;
-console.log(!!a);
-</code></pre></li>
-</ul>
-<h1 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h1><ol>
-<li><p><strong>JS实验typeof能得到的哪些类型？</strong></p>
-<pre><code>typeof undefined //undefined
-typeof &apos;abc&apos; // String
-typeof 123 //number
-typeof true //boolean
-typeof {} //object
-typeof [] //object
-typeof null //object
-typeof console.log //function
-</code></pre></li>
-<li><p>何时使用 === 何时使用 ==</p>
-<pre><code>if(obj.a == null){
-    //这里相当于 obj.a === null || obj.a === undefined ，简写形式
-    //这是jQuery源码中的推荐写法
-}
-</code></pre></li>
-<li>JS中有哪些内置函数 —— 数据封装类型<ul>
-<li>object</li>
-<li>Array</li>
-<li>String</li>
-<li>Number</li>
-<li>Boolean</li>
-<li>Date</li>
-<li>Function</li>
-<li>Error</li>
-<li>RegExp</li>
-</ul>
-</li>
-<li><p>JS按存储方式分为哪些类型，并描述其特点</p>
-<pre><code>//值类型
-var a = 100;
-var b = a;
-a = 200;
-console.log(b); //100
-//引用类型（其中对象，数组，函数都是引用类型）
-var a = {age:20};
-var b = a;
-b.age = 21
-console.log(a.age); //21
-</code></pre></li>
-<li><p>如何理解JSON</p>
-<p> <strong>JS只不过是一个JS对象而已</strong></p>
-<pre><code>JSON.stringify({a:10,b:20});
-JSON.parse(&apos;{&quot;a&quot;:&quot;10&quot;,&quot;b&quot;:&quot;20&quot;}&apos;);
-</code></pre></li>
-</ol>
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/alipay.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/09/JS知识-变量的类型和计算/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/05/24/final-topic-code/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          final-topic-code
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/03/17/云计算第一次作业/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">云计算</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  <div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="JS知识-变量的类型和计算" data-title="JS知识-变量的类型和计算" data-url="http://yoursite.com/2019/04/09/JS知识-变量的类型和计算/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-  
-  
-  
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script>
-  var cloudTieConfig = {
-    url: "http://yoursite.com/2019/04/09/JS知识-变量的类型和计算/", 
-    sourceId: "JS知识-变量的类型和计算",
-    productKey: "true",
-    target: "cloud-tie-wrapper"
-  };
-</script>
-<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -476,8 +215,8 @@ JSON.parse(&apos;{&quot;a&quot;:&quot;10&quot;,&quot;b&quot;:&quot;20&quot;}&apo
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
